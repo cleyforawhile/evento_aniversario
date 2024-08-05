@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/birthday_logo.png" alt="aniversario">
+            <p class="hero__text">
+                O aniversário começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Mané Garrincha - Asa Norte - Brasília
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 20,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        09/10/2024 às 20hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Marque presença aqui
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--comidas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">
+                    Aniversário é sinônimo de delícias. Bolos decorados, recheados com camadas doces e coberturas coloridas, são a atração principal. Brigadeiros, docinhos de chocolate, brilham nas mesas ao lado de beijinhos e cajuzinhos. Os salgadinhos, como coxinhas, esfihas e empadinhas, completam a festa, trazendo sabores que agradam a todos. Comer bem é parte essencial dessa celebração.
+                </p>
+            </div>
+            <img class="event__image" src="./images/comida.png" alt="Comida">
+        </div>
+    </section>
+    <section class="event event--enterteiment event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Entretenimento</h2>
+                <p class="event__details__description">
+                    Festas de aniversário são repletas de entretenimento. Pula-pula e tobogãs infláveis garantem a diversão das crianças, que correm e pulam com alegria. Brincadeiras como caça ao tesouro, esconde-esconde e dança das cadeiras mantêm todos animados. Palhaços e mágicos encantam com suas apresentações, enquanto oficinas de pintura e artesanato estimulam a criatividade.
+                </p>
+            </div>
+            <img class="event__image" src="./images/food.png" alt="Enterteitment">
+        </div>
+    </section>
+
+    <section class="event event--meianoite">
+        <div class="container" data-aos="fade-down">
+            <div class="event__details">
+                <h2 class="event__details__title">Depois das 00h</h2>
+                <p class="event__details__description">
+                    Após a meia-noite, a pista de dança ganha vida. As luzes coloridas piscam ao ritmo da música animada, e todos se divertem ao som de hits contagiantes. Sem bebidas alcoólicas, a energia vem da alegria compartilhada e das batidas envolventes. Amigos e familiares dançam juntos, criando momentos inesquecíveis. A diversão é pura e a festa continua, cheia de risos e passos de dança.                </p>
+            </div>
+            <img class="event__image" src="./images/ballada_aniversario.jpg" alt="ballada">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

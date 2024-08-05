@@ -1,0 +1,57 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/birthday_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 1; // Colocar o conteúdo acima do overlay
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secondaryTextColor;
+        opacity: 0.7;
+        z-index: 0; // Overlay abaixo do conteúdo
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 80px;
+        display: block;
+        max-width: 100%; // Prevenir overflow em telas menores
+    }
+
+    &__text {
+        margin: 64px auto;
+        font-size: 40px;
+        line-height: 1.4; // Proporção de linha para melhor legibilidade
+        font-weight: 800;
+        text-align: center;
+        max-width: 80%; // Limitar largura do texto para evitar linhas muito longas
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 24px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 1.2;
+            margin: 24px auto;
+        }
+    }
+}
